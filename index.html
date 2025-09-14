@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>BrainyDigits</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="container" role="application" aria-label="Guess the Number game">
+<section class="left">
+<h1>Guess The Number</h1>
+<p class="lead">I'm thinking of a number between <strong id="minLabel">1</strong> and <strong id="maxLabel">100</strong>. Can you guess it?</p>
+
+
+<div class="board">
+<div id="display" class="big-number">?</div>
+
+
+<div class="controls">
+<label for="guessInput">Your guess</label>
+<input id="guessInput" type="number" inputmode="numeric" min="1" max="100" placeholder="Enter a number" />
+
+
+<div class="btn-row">
+<button id="submitBtn" class="btn">Guess</button>
+<button id="hintBtn" class="btn secondary">Hint</button>
+<button id="restartBtn" class="btn danger">Restart</button>
+</div>
+
+
+<div id="status" class="status">You have <span id="attemptsLeft">10</span> attempts left.</div>
+<div id="message" class="message">Good luck!</div>
+
+
+<div class="meta">
+<small>Guesses List: <span id="guessesList">—</span></small>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
